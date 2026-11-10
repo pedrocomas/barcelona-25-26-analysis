@@ -28,26 +28,25 @@ O projeto contempla desde a coleta dos dados até a estruturação em banco de d
 
 - Visualização e interpretação de indicadores esportivos
 
+
 # Pipeline do Projeto
 
-              FBref
-                  │
-                  ▼
-         Coleta dos dados
-                  │
-                  ▼
-          PostgreSQL Database
-                  │
-     ┌────────────┴────────────┐
-     ▼                         ▼
-Tabela matches               Tabela players
-     │                         │
-     └────────────┬────────────┘
-                  ▼
-          Modelagem Power BI
-                  │
-                  ▼
-          Dashboard Final
+ ```mermaid
+flowchart TD
+    A[FBref] --> B[Coleta e extração dos dados]
+    B --> C[(PostgreSQL Database)]
+
+    C --> D[Tabela matches]
+    C --> E[Tabela players]
+
+    D --> F[Modelagem no Power BI]
+    E --> F
+
+    F --> G[Dashboard Final]
+```
+
+**Nota:** O banco de dados foi estruturado no PostgreSQL por meio de duas tabelas principais: matches, contendo informações das partidas, e players, reunindo as estatísticas individuais dos jogadores. Posteriormente, os dados foram conectados ao Power BI para modelagem e desenvolvimento dos dashboards.
+
 
 
 (Nota: A extração foi realizada diretamente para o banco de dados).
