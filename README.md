@@ -84,17 +84,28 @@ Integração com o Power BI
 Os dashboards apresentam indicadores chave para análise da temporada:
 
 Visão Geral da Temporada:
+
 ✅ Total de Jogos (57)
+
 ✅ Gols Marcados (144) e Média de Posse de Bola (68%)
+
 ✅ Vitórias (44), Empates e Derrotas
+
 ✅ Aproveitamento em casa e fora
+
 ✅ Evolução dos jogos ao longo dos meses
 
+
 Análise de Jogadores:
+
 ✅ Top Artilheiros e Assistentes (Lamine Yamal liderando)
+
 ✅ Minutos jogados e Quantidade de partidas
+
 ✅ Participações em gols e Cartões
+
 ✅ Distribuição do elenco por posição
+
 ✅ Eficiência ofensiva por 90 minutos (Raphinha em destaque)
 
 ---
