@@ -53,6 +53,7 @@ flowchart TD
 
 ---
 # Modelagem do Banco de Dados
+<img width="229" height="319" alt="Captura de tela 2026-10-31 191216" src="https://github.com/user-attachments/assets/79b07f0f-c1ae-4172-8c3b-ed3f5dec1d69" />
 
 O banco de dados foi estruturado no PostgreSQL, focando na organização das informações das partidas e dos jogadores.
 
