@@ -1,4 +1,4 @@
-FC Barcelona 2025/26 — Business Intelligence Dashboard
+# FC Barcelona 2025/26 — Business Intelligence Dashboard
 
 # Dashboard
 <img width="679" height="379" alt="Captura de tela 2026-10-31 175611" src="https://github.com/user-attachments/assets/be80ed9b-f16b-4efd-baf2-efa24e8d3c56" />
