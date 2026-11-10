@@ -1,1 +1,56 @@
 
+-- =====================================================
+-- FC BARCELONA 2025/26
+-- ANÁLISE DE DADOS - POSTGRESQL
+-- =====================================================
+
+
+-- =====================================================
+-- 01. VALIDAÇÃO E EXPLORAÇÃO DOS DADOS
+-- =====================================================
+
+-- Consultas para verificar a qualidade,
+-- consistência e estrutura dos dados.
+
+
+-- =====================================================
+-- 02. ESTATÍSTICAS DAS PARTIDAS
+-- =====================================================
+
+SELECT
+    COUNT(*) AS jogos,
+    COUNT(*) FILTER (WHERE result = 'W') AS vitoria,
+    COUNT(*) FILTER (WHERE result = 'D') AS empate,
+    COUNT(*) FILTER (WHERE result = 'L') AS derrota,
+    SUM(goals_for) AS gols_marcados,
+    SUM(goals_against) AS gols_sofridos,
+    ROUND(AVG(posse), 1) AS media_posse,
+    (SELECT opponent
+     FROM games.matches
+     ORDER BY public DESC
+     LIMIT 1) AS oponente_maior_publico,
+    (SELECT public
+     FROM games.matches
+     ORDER BY public DESC
+     LIMIT 1) AS maior_publico
+FROM games.matches;
+
+
+-- =====================================================
+-- 03. ESTATÍSTICAS DOS JOGADORES
+-- =====================================================
+
+SELECT
+    player,
+    position,
+    matches_played,
+    starts,
+    minutes,
+    goals,
+    assists,
+    goals_assists,
+    yellow_cards,
+    red_cards
+FROM player.players
+ORDER BY goals_assists DESC, goals DESC;
+
