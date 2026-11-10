@@ -97,11 +97,16 @@ Integração com o Power BI
 
 O dashboard apresenta indicadores como:
 
-✅ Total de Jogos 
+✅ Total de Jogos
+
 ✅ Gols Marcados 
+
 ✅ Média de Posse de Bola 
+
 ✅ Vitórias, Empates e Derrotas
+
 ✅ Aproveitamento em casa e fora
+
 ✅ Evolução dos jogos ao longo dos meses
 
 Análise de Jogadores:
