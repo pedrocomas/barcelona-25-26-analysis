@@ -56,7 +56,21 @@ flowchart TD
 <img width="229" height="319" alt="Captura de tela 2026-10-31 191216" src="https://github.com/user-attachments/assets/79b07f0f-c1ae-4172-8c3b-ed3f5dec1d69" />
 
 O banco de dados foi estruturado no PostgreSQL, focando na organização das informações das partidas e dos jogadores.
+---
+# PostgreSQL & SQL
 
+O banco de dados foi desenvolvido utilizando PostgreSQL, contemplando a organização das informações das partidas e dos jogadores.
+
+Foram desenvolvidas consultas SQL para:
+
+- Validação e preparação dos dados;
+- Agregações e estatísticas gerais da temporada;
+- Análise individual dos jogadores;
+- Criação de Views para organização e disponibilização dos dados;
+- Integração com o Power BI.
+
+Também foram utilizadas funções de agregação, filtros, subqueries e ordenações para construção dos indicadores apresentados nos dashboards.
+---
 # Tabelas
 
 matches: Dados gerais de cada partida (data, adversário, gols, posse de bola, etc.).
